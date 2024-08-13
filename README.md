@@ -25,6 +25,7 @@ project/
 ├── requirements.txt
 ├── README.md
 └── conftest.py
+```
 
 - **`pages/`**: Contains Page Object Model (POM) classes for different pages.
 - **`tests/`**: Contains test scripts.
@@ -49,7 +50,7 @@ Python 3 is usually pre-installed. You can verify this by running:
 
 ```bash
 python3 --version
-
+```
 If Python 3 is not installed, install it via your package manager:
 
 **Ubuntu/Debian:**
@@ -57,12 +58,12 @@ If Python 3 is not installed, install it via your package manager:
 ```bash
 sudo apt-get update
 sudo apt-get install python3 python3-pip
-
+```
 **macOS (using Homebrew):**
 
 ```bash
 brew install python3
-
+```
 **Windows:**
 
 Download Python 3 from the official website: [python.org](https://www.python.org/).
@@ -72,38 +73,39 @@ Download Python 3 from the official website: [python.org](https://www.python.org
 Clone the repository:
 
 ```bash
-git clone [[https://github.com/jacqueswest/wikipedia.git]](https://github.com/jacqueswest/wikipedia.git)
+git clone https://github.com/jacqueswest/wikipedia.git
 cd wikipedia
-
+```
 ### Setting Up a Virtual Environment (Optional but Recommended)
 
 Create a virtual environment:
 
 ```bash
 python3 -m venv venv
-
+```
 Activate the virtual environment:
 
 **Linux/macOS:**
 
 ```bash
 source venv/bin/activate
-
+```
 **Windows:**
 
 ```bash
 venv\Scripts\activate
-
+```
 ### Install the Project Requirements
 
 Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### Running the Tests
 
 To run the tests, use the following command:
 
 ```bash
 pytest tests/test_wikipedia_search.py
+```
