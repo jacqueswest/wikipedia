@@ -104,8 +104,22 @@ pip install -r requirements.txt
 ```
 ### Running the Tests
 
-To run the tests, use the following command:
+### Running the Tests with HTML Reporting
+
+The project is configured to automatically generate an HTML report of the test results. Simply run the following command:
 
 ```bash
 pytest tests/test_wikipedia_search.py
 ```
+
+
+### Summary
+
+- **`pytest.ini` Configuration**: By adding `--html=report.html --self-contained-html` to the `addopts` in `pytest.ini`, HTML reporting is now automatic.
+- **Run Tests**: Simply run `pytest`, and the report will be generated automatically.
+- **Open Report**: Simply run open report.html on windows. Or copy and paste the location path in your browser.
+This setup ensures that every time you or someone else runs the tests, an HTML report will be created, making it easier to review and share the test results.
+
+### Example of the HTML Test Report
+
+![html_report.png](images%2Fhtml_report.png)
